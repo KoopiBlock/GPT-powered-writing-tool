@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.root {
+    display: flex;
+    place-content: center flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 100vh;
+    overflow: auto;
+    padding: 0px;
+    position: relative;
+}
+
+.header {
+   margin: auto;
+   width: 80%; 
+}
+
+.header-title {
+    color: #FFF;
+    font-size: 2.5em;
+    text-align: center;
+    
+}
+
+.header-subtitle {
+    color: rgb(99, 99, 99);
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.section-desc {
+    color: rgb(236, 120, 12);
+    text-align: center;
+    margin-top: -1em;
+}
+
+.prompt-boxes-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.output-text {
+    padding: 1em;
+    width: 80%;
+    font-size: 1.5em;
+    margin: auto;
+    color: #FFF;
+}
+
+.prompt-box {
+    
+    border: #FFF 2px solid;
+    color: #FFF;
+    border-radius: 1em;
+    
+    
+    width: 50%;
+    height: 11.5em;
+    margin: 1em;
+}
+
+.prompt-box1 {
+    border: #FFF 2px solid;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.prompt-box2 {
+    border: #FFF 2px solid;
+    border-radius: 1em;
+    
+    
+    width: 80%;
+    height: 15em;
+    margin: auto;
+}
+
+.prompt-box3 {
+    border: #FFF 2px solid;
+    border-radius: 1em;
+    
+    
+    width: 80%;
+    
+    height: 25em;
+    margin: auto;
+}
+
+.prompt-box4 {
+    border: #FFF 2px solid;
+    border-radius: 1em;
+    
+    
+    width: 80%;
+    height: 100%;
+    min-height: 30em;
+    margin: auto;
+}
+
+.inputs-container {
+    width: 50%;
+}
+
+.input-box {
+    width: 100%;
+    margin: 1.5em;
+    background-color: transparent;
+    color: #FFF;
+
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+   
+}
+
+.prompt-buttons {
+    padding-top: 2em;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.generate{
+    background-color: rgb(255, 102, 0);
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: .1em 1em;
+    border-radius: 1em;
+    width: 10%;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+
+
+ /* Loading ring animation */
+.loader {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.red {
+    color: rgb(255, 102, 0);
+    
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
