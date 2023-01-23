@@ -39,7 +39,7 @@ const Home = () => {
 
     console.log("Calling OpenAI...")
 
-    const response = await fetch('http://localhost:3000/api/generateTitle', {
+    const response = await fetch('/api/generateTitle', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const Home = () => {
 
     console.log("Calling OpenAI...")
 
-    const response = await fetch('http://localhost:3000/api/generateDesc', {
+    const response = await fetch('/api/generateDesc', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ const Home = () => {
 
     console.log("Calling OpenAI...")
 
-    const response = await fetch('http://localhost:3000/api/generateTab', {
+    const response = await fetch('/api/generateTab', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ const Home = () => {
 
     console.log("Calling OpenAI...")
 
-    const response = await fetch('http://localhost:3000/api/generateArt', {
+    const response = await fetch('/api/generateArt', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
